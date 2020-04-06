@@ -1,0 +1,25 @@
+<app-user-profile></app-user-profile>
+<div class="recipe-form">
+  <div class="inp">
+    <label>Title: <br>
+      <input type="text" formControl="recipeName">
+    </label>
+  </div>
+  <div class="inp">
+    <label>Description: <br>
+      <textarea rows="3" formControl="description"></textarea>
+    </label>
+  </div>
+  <div class="inp">
+    <label>Ingredients: <br>
+      <textarea rows="7" formControl="ingredients"></textarea>
+    </label>
+  </div>
+  <div class="inp">
+    <button (click)="newRecipe()">Add recipe</button>
+  </div>
+</div>
+<hr>
+<div>
+  <app-best-recipes></app-best-recipes>
+</div>

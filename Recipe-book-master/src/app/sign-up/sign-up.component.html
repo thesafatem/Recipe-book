@@ -1,0 +1,29 @@
+<body>
+  <form>
+
+    <div class="segment">
+      <h1>Create your account</h1>
+    </div>
+
+    <label>
+      <input #username type="text" placeholder="Username"/>
+    </label>
+
+    <label>
+      <input #email type="text" placeholder="Email address"/>
+    </label>
+
+    <label>
+      <input #password type="password" placeholder="Password"/>
+    </label>
+
+    <button [routerLink]="['/users']" type="button" (click)="add(
+      username.value, password.value, email.value);
+      username.value=''; password.value=''; email.value=''">
+      <i class="fas fa-lock"></i> Sign up</button>
+
+    <button [routerLink]="['/login']" class="new" type="button">Have an account?</button>
+
+  </form>
+
+</body>
